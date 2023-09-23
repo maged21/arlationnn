@@ -618,6 +618,12 @@ z-index: 98;
   object-fit: cover;
 }
 
+
+.fnc-slide__mask .arabic-mg{
+  height: 100%;
+  object-fit: fill;
+}
+
 .m--before-sliding .fnc-slide__mask {
   transform: rotate(-10deg) translate3d(200px, 0, 0);
   opacity: 0;
