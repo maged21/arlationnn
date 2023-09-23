@@ -147,6 +147,7 @@ body{
 #header {
   height: 100vh;
   position: relative;
+  z-index: 19;
 }
 
 .video-section {
@@ -167,6 +168,60 @@ body{
   height: 100%;
   object-fit: cover;
   filter: brightness(0.8);
+}
+
+#skipButton{
+  position: absolute;
+  bottom: 5%;
+  z-index: 20;
+  background: transparent;
+  color: #fff;
+  right: 2%;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  animation:fadeInOut 2s infinite;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+#cookie-consent {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: #101010;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  z-index: 3;
+}
+
+/* Styling for the "Allow" button */
+#allow-button {
+  background-color: #2fbced;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .navbar {

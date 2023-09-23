@@ -1,18 +1,46 @@
 // intro
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("video");
   const slider = document.getElementById("slider");
+  const skipButton = document.getElementById("skipButton");
   const firstNavButton = slider.querySelector(".fnc-nav__control");
 
-  if (video) {
-    video.addEventListener("ended", function() {
+  // Function to skip the video and show the slider
+  function skipVideo() {
+      video.pause();
+      video.currentTime = 0;
       video.style.display = "none";
       slider.style.display = "block";
-
       firstNavButton.click();
-    });
+  }
+
+  // Add a click event listener to the skip button
+  skipButton.addEventListener("click", skipVideo);
+
+  if (video) {
+      video.addEventListener("ended", function () {
+          skipVideo(); // Call the skipVideo function when the video ends
+      });
   }
 });
+
+// Function to display the cookie consent bar after 5 seconds
+function showCookieConsent() {
+  setTimeout(function() {
+      document.getElementById('cookie-consent').style.display = 'block';
+  }, 5000);
+}
+
+// Function to hide the cookie consent bar when "Allow" is clicked
+function hideCookieConsent() {
+  document.getElementById('cookie-consent').style.display = 'none';
+}
+
+// Call the function to show the cookie consent bar
+showCookieConsent();
+
+// Add a click event listener to the "Allow" button
+document.getElementById('allow-button').addEventListener('click', hideCookieConsent);
 
 // slider
 (function() {

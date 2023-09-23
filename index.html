@@ -56,6 +56,7 @@
                     <video autoplay muted id="video">
                       <source src="images/hero.mp4" type="video/mp4">
                     </video>
+                    <button id="skipButton">Skip Video...</button>
                 </section>
                 <div class="fnc-slider example-slider" id="slider">
                     <div class="fnc-slider__slides">
@@ -148,7 +149,7 @@
                           <div class="fnc-slide__content">
                             <h2 class="fnc-slide__heading">
                               <div class="fnc-slide__heading-line">
-                                <span>Culture</span>
+                                <span>Cultural</span>
                               </div>
                               <div class="fnc-slide__heading-line">
                                 <span>Consultation</span>
@@ -281,7 +282,9 @@
                       </div>
                     </nav>
                 </div>
-
+                <div id="cookie-consent">
+                  This website uses cookies to ensure you get the best experience. <button id="allow-button">Allow</button>
+                </div>
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid mx-5">
                       <a class="navbar-brand" href="index.html">
@@ -307,7 +310,7 @@
                                 <a
                                   class="dropdown-item fs-5 text-capitalize"
                                   href="../pages/services.html#game-lqa"
-                                  >game lqa and lqe</a
+                                  >game LQA and LQE</a
                                 >
                               </li>
                               <li>
@@ -356,7 +359,7 @@
                                 <a
                                   class="dropdown-item fs-5 text-capitalize"
                                   href="../pages/services.html#consultation"
-                                  >culture consultation</a
+                                  >cultural consultation</a
                                 >
                               </li>
                               <li>
@@ -414,11 +417,11 @@
                             <div class="navtwo-item-wrapper"></div>
                         </div>
                         <div class="navtwo-link">
-                            <a href="pages/services.html">Service</a>
+                            <a href="pages/services.html">Services</a>
                             <div class="navtwo-item-wrapper"></div>
                         </div>
                         <div class="navtwo-link">
-                            <a href="pages/contact.html">Contact</a>
+                            <a href="pages/contact.html">Contact Us</a>
                             <div class="navtwo-item-wrapper"></div>
                         </div>
                     </div>
@@ -501,7 +504,7 @@
                                 <img src="images/services/wp-intro.jpeg" alt="about1" class="img-fluid rounded">
                             </div>
                             <div class="col-6 text-start">
-                                <img src="images/services/wp-subtitling.jpeg" alt="about2" class="img-fluid rounded">
+                                <img src="images/services/wp-gaming.jpeg" alt="about2" class="img-fluid rounded">
                             </div>
                             <div class="col-6 text-end">
                                 <img src="images/people/dubbing.jpg" alt="about3" class="img-fluid rounded">
@@ -1008,6 +1011,8 @@
       // Add a click event listener to the mute button
       toggleMute.addEventListener("click", toggleMuteSound);
   </script>
+
+  
   
 
 </body>
