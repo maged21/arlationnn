@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/arlation-logo.png" />
+    <title>Arlation Mirage</title>
+
+    <!-- home page css -->
+    <link rel="stylesheet" href="../css/mirage.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="before"></div>
+      <div class="after"></div>
+      <div class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+      </div>
+
+      <!-- scroll to top -->
+      <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+
+      <!-- navbar -->
+      <div id="header">
+        <section class="video-section">
+          <video id="heroVideo" autoplay  loop>
+            <source src="../images/mirage.mp4" type="video/mp4" />
+          </video>
+          <button id="muteButton" class="fade"><i class="fas fa-volume-up"></i></button>
+        </section>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/arlation-logo.png"
+                alt="logo"
+                class="img-fluid w-50 ms-2"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-6 fw-bold" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/about.html?transition=true"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/portfolio.html?transition=true"
+                    >Our Portfolio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/services.html?transition=true"
+                    type="button"
+                    data-bs-toggle=""
+                    aria-expanded="true"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#game-lqa"
+                        >game lqa and lqe</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#game-localization"
+                        >game localization</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#arabic-implemention"
+                        >arabic implementation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#text-translation"
+                        >text translation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#subtitling"
+                        >subtitling</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#dubbing"
+                        >dubbing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#video-editing"
+                        >video editing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#consultation"
+                        >culture consultation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#training"
+                        >training</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/contact.html?transition=true"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- second navbar -->
+
+      <div class="navbartwo">
+        <div class="site-logo text-white">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/arlation-logo.png"
+              alt="logo"
+              class="img-fluid w-50 ms-5"
+            />
+          </a>
+        </div>
+        <div class="menu-toggle">
+          <div id="menu-toggle-btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="navtwo-container">
+        <div class="navtwo">
+          <div
+            class="nvtwo d-flex justify-content-center align-items-lg-start flex-column"
+          >
+            <div class="navtwo-logo text-white">Arlation</div>
+            <div class="navtwo-socials">
+              <a
+                class="me-2 text-white"
+                href="https://www.facebook.com/arlation/"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://twitter.com/arlation1?lang=en"
+                target="_blank"
+                >Twitter</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://www.linkedin.com/company/arlation-llc/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://www.instagram.com/arlationdmcc/"
+                target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="navtwo-link">
+              <a href="../index.html">Home</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/about.html">About</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/portfolio.html">Portfolio</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/services.html">Service</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/contact.html">Contact</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <div class="navtwo-footer-links d-flex justify-content-between">
+            <a href="pages/privacy-policy.html">Privacy Policy</a>
+            <a href="">info@arlation.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- mirage -->
+
+      <section id="mirage" class="mirage py-5">
+        <div class="container py-5">
+          <div class="text-center">
+            <h1>5/ 10/ 2023</h1>
+          </div>
+          <div class="row justify-content-around align-items-center my-5 gap-3">
+            <div class="col-lg-6">
+              <img
+                src="../images/mirage.jpeg"
+                alt="arlation-mirage"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-5">
+              <h2 class="mb-4 fw-bolder">About Mirage</h2>
+              <h5 class="mirage-text">
+                Return to the roots of the Assassin's Creed series in the
+                latest, next-gen Assassin's Creed Mirage. Become Basim, plagued
+                by nightmarish visions as he journeys to become a master
+                assassin. Venture through a vividly imagined 9th-century Baghdad
+                and become a legendary assassin in Assassin's Creed Mirage.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="container py-5">
+          <div
+            class="row justify-content-around align-items-center my-5 flex-row-reverse gap-3"
+          >
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <video
+                  src="../images/Assassins_Creed_Mirage__(getmp3.pro).mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <h2 class="mb-4 fw-bolder">Eyad Nassar</h2>
+              <h5 class="mirage-text">
+                Introducing Eyad Nasser: The brilliant voice embodying Bassam,
+                the main character of Assassin's Creed Mirage. Immerse yourself
+                in the gaming realm and witness Nasser's unparalleled dubbing
+                expertise firsthand.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="container py-5">
+          <div class="row justify-content-around align-items-center my-5 gap-3">
+            <div class="col-lg-6">
+              <div class="ratio ratio-16x9">
+                <video
+                  src="../images/baghdad.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <h2 class="mb-4 fw-bolder">Latest Trailer</h2>
+              <h5 class="mirage-text">
+                The new Assassin's Creed game will follow the story of Basim Ibn
+                Is'haq, who joins the Hidden Ones in order to eliminate the
+                Order of the Ancients and break their power over the city of
+                Baghdad.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="container position-relative overflow-hidden py-5">
+            <h2>Mirage Feedback</h2>
+          <div class="mySwiper">
+            <div class="swiper-wrapper mt-5">
+              <div class="swiper-slide feedback">
+                <p>
+                  الترجمة العربية وعملية الدبلجة جاءت بمستوى فائق إضافة إلى ذلك، استخدام تعبيرات وعبارات شائعة في اللغة العربية مثل "إن شاء الله" تجعل التجربة أكثر واقعية وقربًا لقلوب اللاعبين العرب خصوصاً. هذه التفاصيل الدقيقة تساعد في تعزيز الانغمار في اللعبة وتجعل اللاعب يشعر وكأنه جزء من العالم الذي يتفاعل معه.
+                </p>
+
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details d-flex justify-content-center">
+                  <span class="test-name text-uppercase">IGN</span>
+                </div>
+              </div>
+              <div class="swiper-slide feedback">
+                <p>
+                  كما أن الدبلجة العربية للشخصيات كانت موفقة بشكل كبير، حيث تم اختيار مؤدي الأصوات بعناية فائقة لضمان تقديم أداء صوتي يليق بالشخصيات ويعبر عن شخصيتها بشكل صحيح. النبرات، التعبيرات، وحتى اللهجات كانت دقيقة ومتناسقة مع السياق.
+                </p>
+
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details d-flex justify-content-center">
+                  <span class="test-name text-uppercase">IGN</span>
+                </div>
+              </div>
+              <div class="swiper-slide feedback">
+                <p>
+                  لا تدخر يوبي سوفت مجهودًا في دعم المنطقة العربية في كل ألعابها منذ سنوات طويلة، ومنذ بدأت في دبلجة مجموعة كبيرة من الألعاب الكبيرة التي تمتلكها الشركة، كانت أساسنز كريد أحد تلك الألعاب إلا أن دعم اللغة العربية كلغة دبلجة للحوارات توقف في الثلاثية الأخيرة، ولكنه يعود من جديد مع كوكبة مميزة من الممثلين العرب على رأسهم الفنان إياد نصار الذي يلعب دور باسم بامتياز وقد أضاف وجوده في مثل هذا الدور الهام رونقًا خاصًا للشخصية وللعبة ككل، ويمكنني القول بأنه واحد من أكثر الاختيارات الموفقة للأداءآت الصوتية منذ بدأت الألعاب تقدم أصواتًا عربية.
+                </p>
+
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details d-flex justify-content-center">
+                  <span class="test-name text-uppercase">GAMESMIX</span>
+                </div>
+              </div>
+              <div class="swiper-slide feedback">
+                <p>
+                  من شخص جرب الكثير من الالعاب اللي تدعم اللغة العربيةو اعتقد أن Assasins's Creed السراب هي افضل لعبه تدعم اللغه العربيه علي الإطلاق 
+                </p>
+
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details d-flex justify-content-center">
+                  <span class="test-name text-uppercase">Abdullah Reviews</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <div class="container-fluid scroll-area text-white" id="footer">
+        <div class="row footer justify-content-between py-3">
+          <div class="col-lg-3 p-3 fs-6">
+            <img
+              src="../images/arlation-logo.png"
+              alt="demo"
+              class="img-fluid mb-4"
+            />
+            <p>Arlation is a growing service provider in the industry of localization and language. We offer every one of our partners state-of-the-art
+                visual and audio communication solutions</p>
+            <div class="social-icons d-flex">
+              <a href="https://www.facebook.com/arlation/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://twitter.com/arlation1?lang=en"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://www.linkedin.com/company/arlation-llc/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://www.instagram.com/arlationdmcc/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 footer-box fs-6">
+            <h5 class="mb-4">Find Us</h5>
+            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>dubai</p>
+            <p class="text-capitalize"><i class="fa-solid fa-map-location me-2"></i>1708 Armada Tower 2 JLT, Dubai, UAE</p>
+            <p><i class="fa-solid fa-box me-2"></i> 57594</p>
+            <hr class="w-75">
+            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>egypt</p>
+            <p class="text-capitalize"><i class="fa-solid fa-map-location me-2"></i>122 Tahrir St., Dokki ,Giza, Egypt</p>
+            <p class="fs-6"><i class="fa-solid fa-phone me-2"></i>+20 10 0909 2266</p>
+            <hr class="w-75">
+            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>UK</p>
+            <p class="text-capitalize"><i class="fa-solid fa-map-location me-2"></i>Nexus House, 2 Cray Road DA14 5DA, UK</p>
+        </div>
+          <div class="col-lg-2 p-3">
+            <h5 class="mb-4">Links</h5>
+            <ul class="ps-0">
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/services.html#game-lqa"
+                  >LQA And LQE</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/about.html?transition=true"
+                  >About</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/portfolio.html?transition=true"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/services.html?transition=true"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/contact.html?transition=true"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/privacy-policy.html?transition=true"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 p-3 fs-6">
+            <h6 class="fw-bold text-uppercase mt-3 mb-4">company</h6>
+            <p class="lh-lg mt-3 mb-3">Get in touch with us via mail.</p>
+            <a
+              href="mailto:info@arlation.com"
+              class="btn rounded-pill main-btn w-75"
+              >info@arlation.com</a
+            >
+            <div class="row certficate-footer">
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/ISO-9001-250-250-150x150.png" class="img-fluid  cert">
+              </div>
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+              </div>
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-capitalize mb-1 text-center copyrights">
+          2023 © Arlation All rights reserved
+        </p>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/a72b18742e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script src="../js/js.js"></script>
+    <!-- swiper -->
+    <script src="../js/swiper-bundle.min.js"></script>
+    <!-- script END -->
+    <script src="../js/pages-script.js"></script>
+
+    <!-- <script>
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+              expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + value + expires + "; path=/";
+          }
+          
+          function getCookie(name) {
+            var nameEQ = name + "=";
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+              var cookie = cookies[i];
+              while (cookie.charAt(0) == ' ') {
+                cookie = cookie.substring(1, cookie.length);
+              }
+              if (cookie.indexOf(nameEQ) == 0) {
+                return cookie.substring(nameEQ.length, cookie.length);
+              }
+            }
+            return null;
+          }
+          
+          var hasAcceptedCookies = getCookie("cookiesAccepted");
+          
+          if (!hasAcceptedCookies) {
+            // Display the cookie consent banner
+            var banner = document.createElement("div");
+            banner.className = "cookie-banner";
+            banner.innerHTML = `
+              This website uses cookies to improve your experience. 
+              <button class="cookie-btn" id="acceptCookies">Accept</button>
+            `;
+            document.body.appendChild(banner);
+          
+            // Add event listener to the accept button
+            document.getElementById("acceptCookies").addEventListener("click", function () {
+              // Set the cookiesAccepted cookie when the user accepts
+              setCookie("cookiesAccepted", "true", 365);
+              // Remove the banner
+              banner.remove();
+            });
+          }
+          
+    </script> -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          840: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+
+// Get references to the video and mute button elements
+const video = document.getElementById("heroVideo");
+const muteButton = document.getElementById("muteButton");
+
+// Function to toggle mute/unmute
+function toggleMute() {
+  if (video.muted) {
+    video.muted = false;
+    muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+  } else {
+    video.muted = true;
+    muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
+  }
+}
+
+// Initial state: Video is unmuted
+video.muted = false;
+muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+
+// Add a click event listener to the mute button
+muteButton.addEventListener("click", toggleMute);
+
+
+
+    </script>
+  </body>
+</html>

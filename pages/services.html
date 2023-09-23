@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/arlation-logo.png" />
+    <title>Arlation Services</title>
+    <!-- home page css -->
+    <link rel="stylesheet" href="../css/services.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="before"></div>
+    <div class="after"></div>
+    <div class="loader">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <div class="bar4"></div>
+      <div class="bar5"></div>
+      <div class="bar6"></div>
+    </div>
+
+    <div>
+      <!-- scroll to top -->
+      <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+
+      <div id="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/arlation-logo.png"
+                alt="logo"
+                class="img-fluid w-50 ms-2"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-6 fw-bold" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/about.html?transition=true"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/portfolio.html?transition=true"
+                    >Our Portfolio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/services.html?transition=true"
+                    type="button"
+                    data-bs-toggle=""
+                    aria-expanded="true"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#game-lqa"
+                        >game lqa and lqe</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#game-localization"
+                        >game localization</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#arabic-implemention"
+                        >arabic implementation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#text-translation"
+                        >text translation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#subtitling"
+                        >subtitling</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#dubbing"
+                        >dubbing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#video-editing"
+                        >video editing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#consultation"
+                        >culture consultation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#training"
+                        >training</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/contact.html?transition=true"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1 class="text-uppercase head-text">services</h1>
+      </div>
+
+      <!-- second navbar -->
+
+      <div class="navbartwo">
+        <div class="site-logo text-white">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/arlation-logo.png"
+              alt="logo"
+              class="img-fluid w-50 ms-5"
+            />
+          </a>
+        </div>
+        <div class="menu-toggle">
+          <div id="menu-toggle-btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="navtwo-container">
+        <div class="navtwo">
+          <div
+            class="nvtwo d-flex justify-content-center align-items-lg-start flex-column"
+          >
+            <div class="navtwo-logo text-white">Arlation</div>
+            <div class="navtwo-socials">
+              <a
+                class="me-2 text-white"
+                href="https://www.facebook.com/arlation/"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://twitter.com/arlation1?lang=en"
+                target="_blank"
+                >Twitter</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://www.linkedin.com/company/arlation-llc/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://www.instagram.com/arlationdmcc/"
+                target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="navtwo-link">
+              <a href="../index.html">Home</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/about.html">About</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/portfolio.html">Portfolio</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/services.html">Service</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/contact.html">Contact</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <div class="navtwo-footer-links d-flex justify-content-between">
+            <a href="../pages/privacy-policy.html">Privacy Policy</a>
+            <a href="">info@arlation.com</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- service -->
+      <div id="service">
+        <div class="container-fluid">
+          <section id="game-lqa">
+            <div
+              class="row service-section justify-content-around align-items-center bg-white text-dark py-5 flex-row-reverse"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-once="true"
+                  data-aos-duration="500"
+                >
+                  <span>game</span> lqa and lqe
+                </h1>
+                <ul
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    At Arlation, We take pride in being guardians of quality, not only at the last step, but throughout the localization process. This  integral part of localization and translation is performed on three separate levels; linguistic testing, cosmetic testing and  functionality testing, We did more than 3000 LQA hours for AAA titles such as Cyberpunk 2077 and Dying Light 2: Stay Human and  many more.
+                  </li>
+                  <li>
+                    This entails consistency of terminology throughout the files, accuracy of translation, verification against glossaries and much more.
+                  </li>
+                  <li>
+                    This entails testing the software performance and verification that the localization process has not introduced any bugs to the game  that may cause breaks or crashes. Our attentive and detail-oriented quality control and testing team is fully dedicated to producing  a flawless enjoyable game to the end users .
+
+                  </li>
+                  <li>
+                    This entails consistency of terminology throughout the files, accuracy of translation, verification against glossaries and much more.
+                    Our Localization Quality Engineer department offers seamless software solutions to ensure Arabic content displays flawlessly within  game engines, enhancing player experiences. Our team of software engineers optimize Arabic translations and user interfaces,  guaranteeing an authentic gaming journey for Middle Eastern audiences. 
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-right"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+              <div class="row about-img g-3">
+                        
+                <div class="col-6">
+                    <img src="../images/people/test.png" alt="lqe" class="img-fluid rounded">
+                </div>
+                <div class="col-6">
+                    <img src="../images/services/vr.jpeg" alt="lqa" class="img-fluid rounded">
+                </div>
+            </div>
+              </div>
+            </div>
+          </section>
+          <section id="game-localization">
+            <div
+              class="row service-section d-flex align-items-center justify-content-around py-5"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                  data-aos-once="true"
+                >
+                  <span>game</span> localization
+                </h1>
+                <ul
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    At Arlation, we believe that it is imperative to provide
+                    accurate, consistent, clear and fun translations that
+                    conform to the cultural norms and nuances of each local
+                    market, all while maintaining the soul of the game.
+                  </li>
+                  <li>
+                    This is Localization and this is our game.Adapting games
+                    with their content, graphics and sounds to different Arab
+                    cultures is a highly specialized task that requires
+                    mastering the language, understanding the culture, and
+                    familiarity with history.
+                  </li>
+                  <li>
+                    We offer our game localization to Middle Eastern and North
+                    African Arab Countries, taking heed of cultural nuances,
+                    terminology correctness, consistency and appropriateness, so
+                    that all gamers feel that games were developed in their
+                    mother tongue and in accordance to their culture.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-left"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img
+                  src="../images/people/1 (5).jpg"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="arabic-implemention">
+            <div
+              class="row service-section justify-content-around align-items-center bg-white text-dark py-5 flex-row-reverse"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-once="true"
+                  data-aos-duration="500"
+                >
+                  <span>arabic</span> implemention
+                </h1>
+                <ul
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    We have helped many clients to publish their game in Arabic and we will be happy to help in Arabic implementation for your game  either through font coding, design or UI orientation.
+
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-right"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img
+                  src="../images/services/arabic.jpeg"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="text-translation">
+            <div
+              class="row service-section justify-content-around align-items-center py-5 "
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-once="true"
+                  data-aos-duration="500"
+                >
+                  <span>text</span> translation
+                </h1>
+                <ul
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    The power of words cannot be undermined, in fact, and as
+                    Twain said, right words can change the world. It is this
+                    realization that drove us to cater to the needs of partners
+                    aiming at streamlining their content, reaching global
+                    markets and amplifying their profits.
+                  </li>
+                  <li>
+                    Our talented linguists are trained to apply and adhere to
+                    the best practices in translating English to Arabic and vice
+                    versa while upholding accuracy and rendering the meaning of
+                    the original text. Their skills are manifested through
+                    transforming the source text to the native desired language
+                    and remaining faithful to the original text.
+                  </li>
+                  <li>
+                    Stemming from our understanding of different industries and
+                    business fields, we have established partnerships with
+                    numerous clients spanning over many years with millions of
+                    words translated. With this capacity and portfolio, an
+                    accurate, smooth, cost effective and speedy translation, is
+                    guaranteed.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-left"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img
+                  src="../images/services/text-translation.jpeg"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="subtitling">
+            <div
+              class="row service-section d-flex align-items-center justify-content-around bg-white text-dark py-5 flex-row-reverse"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <span>sub</span>titling
+                </h1>
+                <ul
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    In a world where language is expected to cross borders,
+                    subtitling with precision while capturing the essence, humor
+                    and style of the original dialogue is imperative.
+                  </li>
+                  <li>
+                    At Arlation, a leading subtitling company operating in the
+                    Middle East, we have subtitled millions of words covering
+                    different topics of documentaries, comedies, action-packed
+                    films, time-honored classics, television series, horror
+                    shows as well as dramas and historical and educational
+                    programs.
+                  </li>
+                  <li>
+                    The up-to-date software and tools at Arlation allows for
+                    converting different types of files and formats, time
+                    captioning, with the highest technical and linguistic
+                    standards.
+                  </li>
+                  <li>
+                    Our list of partners includes some of the most
+                    internationally renowned and affluent terrestrial and
+                    extraterrestrial television stations as well as various
+                    production houses across the world.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-right"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img src="../images/services/wp-subtitling.jpeg" class="img-fluid" />
+              </div>
+            </div>
+          </section>
+          <section id="dubbing">
+            <div
+              class="row service-section justify-content-around align-items-center py-5"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <span>dub</span>bing
+                </h1>
+                <ul
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    At Arlation studios in Egypt and Jordan, the attention to
+                    detail and quality of work is unparalleled. The two language
+                    (Arabic/English) facilities focus on localizing a script's
+                    dialogue from one language into another, every time, on time
+                    and on budget.
+                  </li>
+                  <li>
+                    Our vast experience covers TV series and films dubbing,
+                    marketing videos and spots, video games, animations,
+                    documentaries, educational programs and much more. Our
+                    dedicated and creative talents make dubbing as easy and fun
+                    as a jingle, done fluently and accurately.
+                  </li>
+                  <li>
+                    The meticulous post production completed with the most
+                    advanced equipment and technology, and bullet-proof workflow
+                    allow you to capitalize on your profits, maximize your
+                    sales, reach your target audience around the world and boost
+                    your brand presence.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-left"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img src="../images/services/wp-studio.jpeg" class="img-fluid" />
+              </div>
+            </div>
+          </section>
+          <section id="video-editing">
+            <div
+              class="row service-section d-flex align-items-center justify-content-around bg-white text-dark py-5 flex-row-reverse"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <span>video</span> editing
+                </h1>
+                <ul
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    A winning game is a combination of a compelling storyline, thrilling music, flashy animations and engaging language. If one of these  components is missing, the game is just not the same. At Arlation, we believe that it is imperative to provide accurate, consistent,  clear and fun translations that conform to the cultural norms and nuances of each local market, all while maintaining the soul of the  game.
+                  </li>
+                  <li>
+                    This is Localization and this is our game. Adapting games with their content, graphics and sounds to different Arab cultures is a  highly specialized task that requires mastering the language, understanding the culture, and familiarity with history.
+
+                  </li>
+                  <li>
+                    Ultimately , this reflects positively on your target audience in terms of brand acceptance and loyalty.
+
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-right"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img
+                  src="../images/services/video-editing.jpg"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="consultation">
+            <div
+              class="row service-section justify-content-around align-items-center py-5"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <span>cons</span>ultation
+                </h1>
+                <ul
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    Translation At Arlation, our motivation to achieve
+                    excellence in the novel industry of digital entertainment
+                    and gaming is transferred to our clients. We offer
+                    comprehensive consulting services on game translation and
+                    localization that make it possible for companies to focus on
+                    creating world-class games that could attract millions,
+                    engaging with their customers, and growing their sales.
+                  </li>
+                  <li>
+                    Our experience goes beyond that to include offering advice
+                    on commissioning translation, recruiting and training
+                    translators and talents, streamlining guidelines, processes
+                    and procedures, and administrative, legal and financial
+                    advice pertaining to the industry.
+                  </li>
+                  <li>
+                    Television and Film Post-Production <br />
+                    As pioneers in the market, we offer consultation on the post
+                    production process. This encapsulates selection criteria for
+                    commissioning a subtitling and dubbing house, ground rules
+                    and concrete steps to establishing a subtitling and dubbing
+                    department, and the best equipment needed.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-left"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img
+                  src="../images/services/consultation.jpeg"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </section>
+          <section id="training">
+            <div
+              class="row service-section d-flex align-items-center justify-content-around bg-white text-dark py-5 flex-row-reverse"
+            >
+              <div class="col-lg-5 service-text">
+                <h1
+                  class="text-uppercase service-title mb-5"
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  training
+                </h1>
+                <ul
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    As a pioneer in localization, translation and subtitling,
+                    The tailored one-on-one or group workshops are aimed to
+                    improve and enhance skill sets in: <br />
+                    <br />
+                    Game translation <br />
+                    Arabic - English Subtitling <br />
+                    English - Arabic Subtitling <br />
+                    Copywriting <br />
+                    <br />
+                  </li>
+                  <li>
+                    Our training moves beyond theory and presentation, giving
+                    you hands-on practical and technical knowledge and
+                    experience through customized development programs.
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-lg-5"
+                data-aos="zoom-out-right"
+                data-aos-once="true"
+                data-aos-duration="500"
+              >
+                <img src="../images/services/wp-training.jpeg" class="img-fluid" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="container-fluid scroll-area text-white" id="footer">
+        <div class="row footer justify-content-between py-3">
+          <div class="col-lg-3 p-3 fs-6">
+            <img
+              src="../images/arlation-logo.png"
+              alt="demo"
+              class="img-fluid mb-4"
+            />
+            <p>Arlation is a growing service provider in the industry of localization and language. We offer every one of our partners state-of-the-art
+                visual and audio communication solutions</p>
+            <div class="social-icons d-flex">
+              <a href="https://www.facebook.com/arlation/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://twitter.com/arlation1?lang=en"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://www.linkedin.com/company/arlation-llc/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://www.instagram.com/arlationdmcc/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 footer-box fs-6">
+            <h5 class="mb-4">Find Us</h5>
+            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>dubai</p>
+            <p class="text-capitalize"><i class="fa-solid fa-map-location me-2"></i>1708 Armada Tower 2 JLT, Dubai, UAE</p>
+            <p><i class="fa-solid fa-box me-2"></i> 57594</p>
+            <hr class="w-75">
+            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>egypt</p>
+            <p class="text-capitalize"><i class="fa-solid fa-map-location me-2"></i>122 Tahrir St., Dokki ,Giza, Egypt</p>
+            <p class="fs-6"><i class="fa-solid fa-phone me-2"></i>+20 10 0909 2266</p>
+            <hr class="w-75">
+            <p class="text-capitalize"><i class="fa-solid fa-location-dot me-2"></i>UK</p>
+            <p class="text-capitalize"><i class="fa-solid fa-map-location me-2"></i>Nexus House, 2 Cray Road DA14 5DA, UK</p>
+        </div>
+          <div class="col-lg-2 p-3">
+            <h5 class="mb-4">Links</h5>
+            <ul class="ps-0">
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/services.html#game-lqa"
+                  >LQA And LQE</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/about.html?transition=true"
+                  >About</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/portfolio.html?transition=true"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/services.html?transition=true"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/contact.html?transition=true"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/privacy-policy.html?transition=true"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 p-3 fs-6">
+            <h6 class="fw-bold text-uppercase mt-3 mb-4">company</h6>
+            <p class="lh-lg mt-3 mb-3">Get in touch with us via mail.</p>
+            <a
+              href="mailto:info@arlation.com"
+              class="btn rounded-pill main-btn w-75"
+              >info@arlation.com</a
+            >
+            <div class="row certficate-footer">
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/ISO-9001-250-250-150x150.png" class="img-fluid  cert">
+              </div>
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+              </div>
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-capitalize mb-1 text-center copyrights">
+          2023 © Arlation All rights reserved
+        </p>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="../js/pages-script.js"></script>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/a72b18742e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        // Check if the device is a mobile device
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+          // Remove AOS initialization on mobile devices
+          AOS.init({ disable: true });
+        }
+      });
+    </script>
+  </body>
+</html>

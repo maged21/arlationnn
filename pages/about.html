@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/arlation-logo.png" />
+    <title>Arlation</title>
+    <!-- home page css -->
+    <link rel="stylesheet" href="../css/about.css" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="before"></div>
+      <div class="after"></div>
+      <div class="loader">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+      </div>
+      <!-- scroll to top -->
+      <span class="up"><i class="fa-solid fa-chevron-up"></i></span>
+
+      <!-- navbar -->
+      <div id="header" class="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid mx-5">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/arlation-logo.png"
+                alt="logo"
+                class="img-fluid w-50 ms-2"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fs-6 fw-bold" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/about.html?transition=true"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/portfolio.html?transition=true"
+                    >Our Portfolio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/services.html?transition=true"
+                    type="button"
+                    data-bs-toggle=""
+                    aria-expanded="true"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#game-lqa"
+                        >game lqa and lqe</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#game-localization"
+                        >game localization</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#arabic-implemention"
+                        >arabic implementation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#text-translation"
+                        >text translation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#subtitling"
+                        >subtitling</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#dubbing"
+                        >dubbing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#video-editing"
+                        >video editing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#consultation"
+                        >culture consultation</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item fs-5 text-capitalize"
+                        href="../pages/services.html#training"
+                        >training</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-bold"
+                    href="../pages/contact.html?transition=true"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1 class="text-uppercase head-text">about</h1>
+      </div>
+
+      <!-- second navbar -->
+
+      <div class="navbartwo">
+        <div class="site-logo text-white">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/arlation-logo.png"
+              alt="logo"
+              class="img-fluid w-50 ms-5"
+            />
+          </a>
+        </div>
+        <div class="menu-toggle">
+          <div id="menu-toggle-btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div id="navtwo-container">
+        <div class="navtwo">
+          <div
+            class="nvtwo d-flex justify-content-center align-items-lg-start flex-column"
+          >
+            <div class="navtwo-logo text-white">Arlation</div>
+            <div class="navtwo-socials">
+              <a
+                class="me-2 text-white"
+                href="https://www.facebook.com/arlation/"
+                target="_blank"
+                >Facebook</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://twitter.com/arlation1?lang=en"
+                target="_blank"
+                >Twitter</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://www.linkedin.com/company/arlation-llc/"
+                target="_blank"
+                >LinkedIn</a
+              >
+              <a
+                class="me-2 text-white"
+                href="https://www.instagram.com/arlationdmcc/"
+                target="_blank"
+                >Instagram</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="navtwo-link">
+              <a href="../index.html?transition=true">Home</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/about.html?transition=true">About</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/portfolio.html?transition=true">Portfolio</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/services.html?transition=true">Service</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+            <div class="navtwo-link">
+              <a href="../pages/contact.html?transition=true">Contact</a>
+              <div class="navtwo-item-wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-footer">
+          <div class="navtwo-footer-links d-flex justify-content-between">
+            <a href="../pages/privacy-policy.html">Privacy Policy</a>
+            <a href="">info@arlation.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+
+      <section id="about">
+        <div class="container">
+          <div class="row about mt-5">
+            <h1 class="about-text"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            data-aos-once="true"
+            >About <span>Us</span></h1>
+            <p
+              class="fs-5"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+              data-aos-once="true"
+            >
+              Arlation is a growing service provider in the industry of
+              localization and language. We offer every one of our partners
+              state-of-the-art visual and audio communication solutions Our team
+              of avid game enthusiasts, knowledgeable translators, experienced
+              proofreaders, talented video editors and creative artists, make
+              sure that adaptation to cultural norms enhances the fun of video
+              gaming in each local market.
+              <br />
+              <br />
+              At Arlation, a project manager is assigned to each project, at
+              every stage, facilitating effective communication, timely
+              delivery, unmatched quality and customized support through
+              numerous sub-divisions covering different areas of media
+              translation, so that every piece falls into place, like a perfect
+              game of Tetris! Since its foundation, Arlation has been led by a
+              group of business-oriented linguists, with a passionate heart for
+              translation, game localization and subtitling, an intelligent mind
+              for business, and an ambitious, persistent soul for distinction.
+            </p>
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-7">
+                <p class="fs-5"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-once="true">
+                  The outcome is manifested in one of the leading companies in
+                  the Middle East, with a reputation speaking only of
+                  excellence. And as innovation is one of our values, we thought
+                  of molding “Arabic and Localization” into Arlation; a new word
+                  representing a world of leading localized video games. A world
+                  where Arab video gamers will immerse themselves in fun that
+                  has a meaning because we always convey the correct message .
+                </p>
+              </div>
+              <div class="col-lg-4"
+              data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-once="true">
+                <img class="img-fluid" src="../images/about.png" alt="" />
+              </div>
+            </div>
+
+            <h1 class="about-text"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            data-aos-once="true"  
+            >Why Choose <span>Us</span></h1>
+            <p
+              class="fs-5"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+              data-aos-once="true"
+            >
+              Dedicated teams to each client .
+              <br />
+              High security measures in all department .
+              <br />
+              Integrated management platform that easily & automatically manages
+              your tasks for a smoother & more guaranteed working (XTRF ).
+              <br />
+              We have our own MemoQ server for more & advanced security than you
+              expect .
+              <br />
+              Have a very smooth, super & high quality with security &
+              consistency by our full-time in-house gaming translators .
+            </p>
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-4">
+                <p class="fs-5"
+                data-aos="fade-right"
+              data-aos-duration="3000"
+              data-aos-once="true">
+                  We have our own studio within premises in addition to latest
+                  equipment's & technology including VoiceQ.
+                </p>
+              </div>
+              <div class="col-lg-6"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-once="true">
+                <img class="img-fluid" src="../images/about-two.png" alt="" />
+              </div>
+            </div>
+
+            <h1 class="about-text"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            data-aos-once="true"><span>Studios</span></h1>
+            <p
+              class="fs-5"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+              data-aos-once="true"
+            >
+              At Arlation's studios in Egypt, Jordan and UAE, the attention to
+              detail and quality of work is unparalleled The two language
+              (Arabic/English) facilities focus on localizing a script's
+              dialogue from one language into another, every time, on time and
+              on budget.
+              <br />
+              <br />
+              Our vast experience covers TV series and films dubbing, marketing
+              videos and spots, video games, animations, documentaries,
+              educational programs and much more Our dedicated and creative
+              talents make dubbing as easy and fun as a jingle, done fluently
+              and accurately.
+            </p>
+            <div class="row align-items-center justify-content-between">
+              <div class="col-lg-7">
+                <p class="fs-5" 
+                data-aos="fade-right"
+                data-aos-duration="3000"
+                data-aos-once="true"  
+                >
+                  Our services exceed execution to advise and guide on selecting
+                  the most appropriate and authentic accent for the market
+                  depending on the content whether Modern Standard Arabic,
+                  Egyptian Arabic, Syrian Arabic, Lebanese Arabic or even
+                  Classical Arabic We can also provide connections to Arabic
+                  super stars, celebrities, youtubers and help in negotiations .
+                </p>
+              </div>
+              <div class="col-lg-4"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-once="true"
+              >
+                <img class="img-fluid" src="../images/about-three.png" alt="" />
+              </div>
+            </div>
+
+            <div class="row certified my-5 justify-content-between align-items-center">
+              <div class="col-lg-7">
+                <h1
+                  class="mb-4 text-uppercase"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>iso</span> 9001
+                </h1>
+                <p
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-once="true"
+                  data-aos-duration="800"
+                  class="fs-5"
+                >
+                  ISO 9001 sets out the criteria for a quality management system
+                  and is the only standard in the family that can be certified
+                  to (although this is not a requirement). It can be used by any
+                  organization, large or small, regardless of its field of
+                  activity. In fact, there are over one million companies and
+                  organizations in over 170 countries certified to ISO 9001.
+                </p>
+              </div>
+              <div
+                class="col-lg-3"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-once="true"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="../images/certificates/ISO-9001-250-250-150x150.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="row certified my-5 align-items-center justify-content-between">
+              <div class="col-lg-7">
+                <h1
+                  class="mb-4 text-uppercase"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>iso</span> 17100
+                </h1>
+                <p
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  class="fs-5"
+                >
+                  ISO 17100. REQUIREMENTS FOR TRANSLATION SERVICES. ISO 17100 is
+                  an international standard, published in 2015 to provide the
+                  requirements that a TSP (Translation Services Provider) shall
+                  meet, in order to provide a translation service that meets
+                  client's and other applicable specifications.
+                </p>
+              </div>
+              <div
+                class="col-lg-3"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-once="true"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="../images/certificates/ISO-Image-1-1-150x150.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="row certified my-5 align-items-center justify-content-between">
+              <div class="col-lg-7">
+                <h1
+                  class="mb-4 text-uppercase"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-once="true"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span>iso</span> 27001
+                </h1>
+                <p
+                  data-aos="fade-down"
+                  data-aos-once="true"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  class="fs-5"
+                >
+                The ISO/IEC 27001 standard provides companies of any size and from all sectors of activity with guidance for establishing, implementing, maintaining and continually improving an information security management system.
+                </p>
+              </div>
+              <div
+                class="col-lg-3"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-once="true"
+                data-aos-duration="1500"
+              >
+                <img
+                  src="../images/certificates/isi27001-150x150-1.png"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <div class="container-fluid scroll-area text-white" id="footer">
+        <div class="row mt-5 footer justify-content-between py-3">
+          <div class="col-lg-3 p-3 fs-6">
+            <img
+              src="../images/arlation-logo.png"
+              alt="demo"
+              class="img-fluid mb-4"
+            />
+            <p>
+              Arlation is a growing service provider in the industry of
+              localization and language. We offer every one of our partners
+              state-of-the-art visual and audio communication solutions
+            </p>
+            <div class="social-icons d-flex">
+              <a href="https://www.facebook.com/arlation/" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://twitter.com/arlation1?lang=en"
+                target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://www.linkedin.com/company/arlation-llc/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                class="ms-3"
+                href="https://www.instagram.com/arlationdmcc/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 footer-box fs-6">
+            <h5 class="mb-4">Find Us</h5>
+            <p class="text-capitalize">
+              <i class="fa-solid fa-location-dot me-2"></i>dubai
+            </p>
+            <p class="text-capitalize">
+              <i class="fa-solid fa-map-location me-2"></i>1708 Armada Tower 2
+              JLT, Dubai, UAE
+            </p>
+            <p><i class="fa-solid fa-box me-2"></i> 57594</p>
+            <hr class="w-75" />
+            <p class="text-capitalize">
+              <i class="fa-solid fa-location-dot me-2"></i>egypt
+            </p>
+            <p class="text-capitalize">
+              <i class="fa-solid fa-map-location me-2"></i>122 Tahrir St., Dokki
+              ,Giza, Egypt
+            </p>
+            <p class="fs-6">
+              <i class="fa-solid fa-phone me-2"></i>+20 10 0909 2266
+            </p>
+            <hr class="w-75" />
+            <p class="text-capitalize">
+              <i class="fa-solid fa-location-dot me-2"></i>UK
+            </p>
+            <p class="text-capitalize">
+              <i class="fa-solid fa-map-location me-2"></i>Nexus House, 2 Cray
+              Road DA14 5DA, UK
+            </p>
+          </div>
+          <div class="col-lg-2 p-3">
+            <h5 class="mb-4">Links</h5>
+            <ul class="ps-0">
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/services.html#game-lqa"
+                  >LQA And LQE</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/about.html?transition=true"
+                  >About</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/portfolio.html?transition=true"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/services.html?transition=true"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/contact.html?transition=true"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  class="link text-white"
+                  href="../pages/privacy-policy.html?transition=true"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 p-3 fs-6">
+            <h6 class="fw-bold text-uppercase mt-3 mb-4">company</h6>
+            <p class="lh-lg mt-3 mb-3">Get in touch with us via mail.</p>
+            <a
+              href="mailto:info@arlation.com"
+              class="btn rounded-pill main-btn w-75"
+              >info@arlation.com</a
+            >
+            <div class="row certficate-footer">
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/ISO-9001-250-250-150x150.png" class="img-fluid  cert">
+              </div>
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+              </div>
+              <div class="col-lg-3 col col-md-4">
+                  <img src="../images/certificates/isi27001-150x150-1.png" class="img-fluid  cert">
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-capitalize mb-1 text-center copyrights">
+          2023 © Arlation All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/a72b18742e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        // Check if the device is a mobile device
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+          // Remove AOS initialization on mobile devices
+          AOS.init({ disable: true });
+        }
+      });
+    </script>
+
+    <!-- script -->
+    <script src="../js/pages-script.js"></script>
+  </body>
+</html>
