@@ -99,7 +99,6 @@ body{
   height: 100%;
   width: 8px;
   display: inline-block;
-  float: left;
   margin-left: 2px;
   -webkit-animation: delay 0.8s infinite ease-in-out;
           animation: delay 0.8s infinite ease-in-out;
@@ -485,6 +484,10 @@ background: #1d1e22 !important;
 
 /* ---------------- portfolio */
 
+.portfolio{
+  margin: 50px 0 !important;
+}
+
 strong{
   font-weight: 900;
 }
@@ -806,6 +809,10 @@ strong{
   }
   #header h1 {
     font-size: 30px;
+  }
+
+  .portfolio{
+    margin: 0px 0 !important;
   }
 
   .canvas_copy {
