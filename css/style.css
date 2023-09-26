@@ -667,7 +667,7 @@ z-index: 98;
 .fnc-slide__content {
   z-index: 2;
   position: absolute;
-  left: 40%;
+  left: 50%;
   top: 40%;
 }
 .fnc-slide__heading {
@@ -1697,7 +1697,7 @@ z-index: 98;
   width: 40vh;
   height: 43vh;
   top: 25%;
-  right: 38%;
+  right: 32%;
 }
 
 .fnc-slide__heading-line {
@@ -1715,7 +1715,7 @@ z-index: 98;
   z-index: 2;
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 70%;
   transform: translate(-25%, -0%);
   /* text-align: center; */
 }
@@ -1788,6 +1788,11 @@ z-index: 98;
     width: 12%;
     margin: 0px 3px;
   }
+
+  .fnc-slide__action-btn{
+  margin-left: 0;
+  margin-top: 50px;
+}
 
 }
 @media screen and (max-width: 1120px) {
@@ -1896,7 +1901,7 @@ z-index: 98;
 }
 .fnc-slide__action-btn{
   margin-left: 0;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .fnc-slide__content {
   z-index: 2;
@@ -2062,7 +2067,7 @@ z-index: 98;
   }
 
   .about-ustwo{
-    padding: 17rem 0;
+    padding: 20rem 0 !important;
   }
 
   .counter-box {
@@ -2117,6 +2122,27 @@ z-index: 98;
   .testimonial p{
     margin-bottom: -20px !important;
   }
+
+  .fnc-slide__mask {
+    width: 40vh;
+    height: 43vh;
+    top: 25%;
+    right: 32%;
+  }
+  .fnc-slide__action-btn{
+    margin-left: 0;
+    margin-top: 70px;
+  }
+  .fnc-slide__content {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-25%, -0%);
+    /* text-align: center; */
+  }
+  
+
 } 
 
 @media screen and (max-width: 280px) {

@@ -32,12 +32,7 @@ if (!isScreenLessThan600()) {
     ease: Power3.easeInOut
   }, 0.12);
 
-  TweenMax.from(".head-text", 1, {
-    delay: 2.8,
-    opacity: 0,
-    y: 20,
-    ease: Expo.easeInOut
-  });
+ 
 }
 
 let span = document.querySelector(".up");
