@@ -9,6 +9,23 @@ function isScreenLessThan600() {
   return window.innerWidth < 600;
 }
 
+// Select the .navbartwo element
+const navbartwo = document.querySelector('.navbartwo');
+
+// Add an event listener to the window for the "scroll" event
+window.addEventListener('scroll', () => {
+    // Check the current scroll position
+    const scrollY = window.scrollY;
+
+    // Set the background color based on the scroll position
+    if (scrollY > 100) {
+        navbartwo.style.backgroundColor = '#101010';
+    } else {
+        navbartwo.style.backgroundColor = 'transparent'; // Change to the original background color
+    }
+});
+
+
 // Only run the animations if the screen width is greater than or equal to 600
 if (!isScreenLessThan600()) {
   TweenMax.from("#header", 1, {
