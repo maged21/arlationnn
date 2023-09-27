@@ -1920,12 +1920,13 @@ z-index: 98;
   padding-left: 0px;
 }
 
+#about-us{
+  padding-bottom: 30px !important;
+}
 
-
-  #about-us{
-    padding-bottom: 30px !important;
-  }
-
+.about-ustwo{
+  height: 110vh !important;
+}
     
   .hero-section h1 {
     font-size: 38px;
@@ -2067,7 +2068,7 @@ z-index: 98;
   }
 
   .about-ustwo{
-    height: 120vh !important;
+    height: 140vh !important;
   }
 
   .counter-box {
@@ -2150,6 +2151,12 @@ z-index: 98;
   height: 120vh;
 }
 }
+@media screen and (max-width: 348px) {
+  .about-ustwo{
+    height: 150vh !important;
+    padding-top: 8rem !important;
+  }
+  }
 @media screen and (max-width: 280px) {
   .sec-title{
     margin-bottom: -10px;
