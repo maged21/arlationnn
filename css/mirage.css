@@ -135,21 +135,21 @@ body{
 
 /* scroll to top */
 .up{
-  color: #143f90;
+  color: #D19678;
   position: fixed;
   bottom: 30px;
   right: -70px;
   font-size: 22px;
   padding: 15px;
   border-radius: 20%;
-  border: 2px solid #143f90;
+  border: 2px solid #D19678;
   cursor: pointer;
   transition: .4s;
   z-index: 10;
 }
 
 .up:hover{
-  background: #143f90;
+  background: #D19678;
   color: #f4fffe;
 }
 .up.show {

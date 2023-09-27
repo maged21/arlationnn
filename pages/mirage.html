@@ -61,7 +61,7 @@
       <!-- navbar -->
       <div id="header">
         <section class="video-section">
-          <video id="heroVideo" autoplay loop>
+          <video id="heroVideo" autoplay muted loop>
             <source src="../images/mirage.mp4" type="video/mp4" />
           </video>
           <button id="muteButton" class="fade"><i class="fas fa-volume-up"></i></button>
@@ -584,7 +584,7 @@
 const video = document.getElementById("heroVideo");
 const muteButton = document.getElementById("muteButton");
 
-let manuallyMuted = false;
+let manuallyMuted = true;
 
 // Function to toggle mute/unmute
 function toggleMute() {
@@ -600,8 +600,8 @@ function toggleMute() {
 }
 
 // Initial state: Video is unmuted
-video.muted = false;
-muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
+video.muted = true;
+muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
 
 // Add a click event listener to the mute button
 muteButton.addEventListener("click", toggleMute);
@@ -611,10 +611,12 @@ function handleScroll() {
   if (window.scrollY > 100) { // Adjust this value as needed
     if (!manuallyMuted) {
       video.muted = true;
+      muteButton.innerHTML = '<i class="fas fa-volume-mute"></i>';
     }
   } else {
     if (!manuallyMuted) {
       video.muted = false;
+      muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
     }
   }
 }
