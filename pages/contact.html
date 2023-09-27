@@ -286,38 +286,50 @@
             </div>
 
             <div class="col-lg-8 text-white cont">
-              <form class="p-4 cont">
+              <form action="https://formspree.io/f/myyqbgnj"
+              method="POST" class="p-4 cont">
                 <input
                   class="in w-100 text-light p-2 my-3 bg-transparent"
                   type="text"
+                  id="name"
+                  name="name"
                   placeholder="Enter Your Name"
+                  required
                 />
                 <input
                   class="in w-100 text-light p-2 my-3 bg-transparent"
-                  type="email"
+                  type="text"
+                  id="email"
+                  name="email"
                   placeholder="Enter Email Address"
+                  required
                 />
                 <input
                   class="in w-100 text-light p-2 my-3 bg-transparent"
                   type="tel"
+                  id="phone"
+                  name="phone"
                   placeholder="Phone Number"
+                  required
                 />
                 <input
                   class="in w-100 text-light p-2 my-3 bg-transparent"
                   type="text"
+                  id="subject"
+                  name="subject"
                   placeholder="Subject"
                 />
                 <textarea
                   class="text-white bg-transparent in p-2 w-100"
-                  name=""
-                  id=""
+                  for="message"
                   cols="120"
                   rows="5"
+                  name="message"
                   placeholder="Your Message"
                 ></textarea>
                 <div class="my-4">
-                  <button class="btn contact-btn text-capitalize text-white">
-                    send now
+                  <button class="btn contact-btn text-capitalize text-white" type="submit">
+                    Submit
                   </button>
                 </div>
               </form>
