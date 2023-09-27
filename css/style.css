@@ -2067,7 +2067,7 @@ z-index: 98;
   }
 
   .about-ustwo{
-    padding: 20rem 0 !important;
+    height: 120vh !important;
   }
 
   .counter-box {
@@ -2144,7 +2144,12 @@ z-index: 98;
   
 
 } 
-
+@media screen and (max-width: 380px) {
+.about-ustwo{
+  padding: 3rem 0;
+  height: 120vh;
+}
+}
 @media screen and (max-width: 280px) {
   .sec-title{
     margin-bottom: -10px;
