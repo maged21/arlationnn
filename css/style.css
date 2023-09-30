@@ -2125,7 +2125,7 @@ z-index: 98;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1366px) {
   .wrap .link{
     height: 12rem !important;
     width: 12rem !important;
