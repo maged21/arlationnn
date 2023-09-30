@@ -419,11 +419,11 @@ $(function () {
 
     function accordion() {
 
-        $('.accord .accord-item').on('click', function() {
+        $('.mobile .accord-item').on('click', function() {
             const timeAnim = 400;
-            $('.accord .accord-item').removeClass("active").css({'pointer-events':'auto'});
+            $('.mobile .accord-item').removeClass("active").css({'pointer-events':'auto'});
             $(this).addClass("active").css({'pointer-events':'none'});
-            $('.accord .accord-header').next().slideUp(timeAnim);
+            $('.mobile .accord-header').next().slideUp(timeAnim);
             $(this).find('.accord-header').next().slideDown(timeAnim);
 
             $('.accord-img').removeClass("active");
@@ -432,6 +432,35 @@ $(function () {
         })
     }
     accordion();
+
+})
+
+ $(function () {
+
+  'use strict';
+
+  function accordion() {
+
+      $('.desktop .accord-item').on('mouseenter', function() {
+          const timeAnim = 400;
+          $('.desktop .accord-item').removeClass("active").css({'pointer-events':'auto'});
+          $(this).addClass("active").css({'pointer-events':'none'});
+          $('.desktop .accord-header').next().slideUp(timeAnim);
+          $(this).find('.accord-header').next().slideDown(timeAnim);
+
+          $('.accord-img').removeClass("active");
+          let id = $(this).data('id');
+          $('#' + id + '-img').addClass("active");
+      });
+      
+      // Optional: Reset the accordion on mouse leave
+      $('.accord .accord-item').on('mouseleave', function() {
+          const timeAnim = 400;
+          $(this).removeClass("active").css({'pointer-events':'auto'});
+          $(this).find('.accord-header').next().slideUp(timeAnim);
+      });
+  }
+  accordion();
 
 })
 // ------------------ services ends
