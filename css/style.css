@@ -1769,7 +1769,7 @@ z-index: 98;
 }
 /* ----------------------- footer */
 .clients {
-  margin: 8rem 0;
+  margin: 9.4rem 0;
 }
 .tech {
   width: 50%;
@@ -1888,7 +1888,7 @@ z-index: 98;
 /* ----------------------- media */
 
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1910px) {
   .navbartwo{
     font-size: 40px;
     padding: 0 2em;
