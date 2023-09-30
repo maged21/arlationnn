@@ -41,6 +41,7 @@ showCookieConsent();
 
 // Add a click event listener to the "Allow" button
 document.getElementById('allow-button').addEventListener('click', hideCookieConsent);
+document.getElementById('refuse-button').addEventListener('click', hideCookieConsent);
 
 // slider
 (function() {
