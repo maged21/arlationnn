@@ -1254,12 +1254,6 @@ z-index: 98;
   z-index: -1;
 }
 
-/* .wrap ul.submenu li a{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #000 !important;
-} */
 
 .ser-text{
   text-align: center;
@@ -1310,11 +1304,26 @@ z-index: 98;
   z-index: -2;
 } 
 
- ul.submenu li:nth-child(1) {
+.wrap ul.submenu a {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.wrap ul.submenu a:hover{
+  color: #2fbced;
+  transition: 0.3s ease;
+}
+
+
+
+ ul.submenu a:nth-child(1) {
   margin-left: -65px !important;
   position: relative;
 }
- ul.submenu li:nth-child(1)::before{
+ ul.submenu a:nth-child(1)::before{
   position: absolute;
   content: '';
   width: 165px;
@@ -1324,81 +1333,81 @@ z-index: 98;
   left: -35%;
   top: 125px;
 }
- ul.submenu li:nth-child(2) {
+ ul.submenu a:nth-child(2) {
   margin-left: -25px !important;
   position: relative;
 }
- ul.submenu li:nth-child(2)::before{
+ ul.submenu a:nth-child(2)::before{
   position: absolute;
   content: '';
   width: 135px;
   height: 0; 
   border-top: 3px dashed #143f90; 
   transform: rotate(140deg);
-  left: -32%;
+  left: -34%;
   top: 90px;
 }
- ul.submenu li:nth-child(3) {
+ ul.submenu a:nth-child(3) {
   margin-left: 5px !important;
   position: relative;
 }
- ul.submenu li:nth-child(3)::before{
+ ul.submenu a:nth-child(3)::before{
   position: absolute;
   content: '';
   width: 109px;
   height: 0; 
   border-top: 3px dashed #143f90; 
   transform: rotate(155deg);
-  left: -30%;
+  left: -35%;
   top: 60px;
 }
- ul.submenu li:nth-child(4) {
+ ul.submenu a:nth-child(4) {
   margin-left: 25px !important;
   position: relative;
 }
- ul.submenu li:nth-child(4)::before{
+ ul.submenu a:nth-child(4)::before{
   position: absolute;
   content: '';
   width: 120px;
   height: 0; 
   border-top: 3px dashed #143f90;
-  left: -32%;
+  left: -42%;
   top: 50%;
 }
- ul.submenu li:nth-child(5) {
+ ul.submenu a:nth-child(5) {
   margin-left: 20px !important;
   position: relative;
 }
- ul.submenu li:nth-child(5)::before{
+ ul.submenu a:nth-child(5)::before{
   position: absolute;
   content: '';
   width: 130px;
   height: 0; 
   border-top: 3px dashed #143f90; 
   transform: rotate(20deg);
-  left: -34%;
+  left: -44%;
   top: -10px;
 }
- ul.submenu li:nth-child(6) {
+ ul.submenu a:nth-child(6) {
   margin-left: -15px !important;
   position: relative;
 }
- ul.submenu li:nth-child(6)::before{
+ ul.submenu a:nth-child(6)::before{
   position: absolute;
   content: '';
   width: 142px;
   height: 0; 
   border-top: 3px dashed #143f90; 
   transform: rotate(-145deg);
-  left: -35%;
+  left: -40%;
   top: -35px;
 }
- ul.submenu li:nth-child(7) {
+ ul.submenu a:nth-child(7) {
   margin-left: -65px !important;
   position: relative;
   width: 400px;
 }
- ul.submenu li:nth-child(7)::before{
+ ul.submenu a:nth-child(7)::before{
   position: absolute;
   content: '';
   width: 187px;
@@ -1915,23 +1924,23 @@ z-index: 98;
   .wrap ul.submenu li {
     margin: 30px 0;
   }
-  ul.submenu li:nth-child(2) {
+  ul.submenu a:nth-child(2) {
     width: 361px;
   }
-  ul.submenu li:nth-child(3) {
+  ul.submenu a:nth-child(3) {
     width: 350px;
   }
-  ul.submenu li:nth-child(4) {
+  ul.submenu a:nth-child(4) {
     width: 332px;
   }
-  ul.submenu li:nth-child(4)::before{
+  ul.submenu a:nth-child(4)::before{
     left: -38%;
     top: 50%;
   }
-  ul.submenu li:nth-child(5) {
+  ul.submenu a:nth-child(5) {
     width: 340px;
   }
-  ul.submenu li:nth-child(6) {
+  ul.submenu a:nth-child(6) {
     width: 362px;
   }
   .accordion-img {
@@ -2006,59 +2015,60 @@ z-index: 98;
     margin: 10px 0;
     gap: 0.2em;
   }
-  ul.submenu li:nth-child(1) {
+  ul.submenu a:nth-child(1) {
     width: 308px;
   }
-  ul.submenu li:nth-child(1)::before{
+  ul.submenu a:nth-child(1)::before{
     top: 80px;
     width: 145px;
   }
-  ul.submenu li:nth-child(2) {
+  ul.submenu a:nth-child(2) {
     width: 300px;
   }
-  ul.submenu li:nth-child(2)::before{
+  ul.submenu a:nth-child(2)::before{
     top: 65px;
     left: -38%;
     transform: rotate(150deg);
+    width: 124px;
   }
-  ul.submenu li:nth-child(3) {
+  ul.submenu a:nth-child(3) {
     width: 288px;
   }
-  ul.submenu li:nth-child(3)::before{
+  ul.submenu a:nth-child(3)::before{
     top: 50px;
     transform: rotate(165deg);
     left: -45%;
     width: 128px;
   }
-  ul.submenu li:nth-child(4) {
+  ul.submenu a:nth-child(4) {
     width: 275px;
   }
-  ul.submenu li:nth-child(4)::before{
+  ul.submenu a:nth-child(4)::before{
     left: -54%;
     top: 50%;
     width: 142px;
   }
-  ul.submenu li:nth-child(5) {
+  ul.submenu a:nth-child(5) {
     width: 285px;
   }
-  ul.submenu li:nth-child(5)::before{
+  ul.submenu a:nth-child(5)::before{
     top: -7px;
     left: -56%;
     width: 165px;
     transform: rotate(-160deg);
   }
-  ul.submenu li:nth-child(6) {
+  ul.submenu a:nth-child(6) {
     width: 306px;
   }
-  ul.submenu li:nth-child(6)::before{
+  ul.submenu a:nth-child(6)::before{
     top: -32px;
     width: 152px;
     left: -44%;
   }
-  ul.submenu li:nth-child(7){
+  ul.submenu a:nth-child(7){
     width: 350px;
   }
-  ul.submenu li:nth-child(7)::before{
+  ul.submenu a:nth-child(7)::before{
     top: -45px;
   }
 
@@ -2116,6 +2126,7 @@ z-index: 98;
     -webkit-filter: grayscale(100%);
   }
 
+
   #f-footer {
     padding-left: 2rem !important;
   }
@@ -2162,30 +2173,38 @@ z-index: 98;
     width: 40% !important;
     top: 0px;
   }
+
+  .wrap li .ser-text::after{
+    right: 65px;
+  } 
+  
+  .wrap li.light-color .ser-text::after {
+    right: 65px;
+  } 
   .accordion-img h4 {
     font-size: 18px;
   }
-  ul.submenu li:nth-child(4)::before{
+  ul.submenu a:nth-child(4)::before{
     left: -55%;
     top: 50%;
     width: 145px;
   }
-  ul.submenu li:nth-child(5)::before{
+  ul.submenu a:nth-child(5)::before{
     top: -0px;
     left: -55%;
     width: 160px;
     transform: rotate(-160deg);
   }
 
-  ul.submenu li:nth-child(6)::before{
+  ul.submenu a:nth-child(6)::before{
     top: -32px;
     width: 152px;
     left: -46%;
   }
-  ul.submenu li:nth-child(7){
+  ul.submenu a:nth-child(7){
     width: 350px;
   }
-  ul.submenu li:nth-child(7)::before{
+  ul.submenu a:nth-child(7)::before{
     top: -50px;
     left: -39%;
   }
