@@ -1978,8 +1978,8 @@ z-index: 98;
   }p
 
   .wrap .link{
-    height: 5rem !important;
-    width: 1rem !important;
+    height: 15rem !important;
+    width: 15rem !important;
   }
   .wrap .link h2{
     position: relative;
@@ -2581,6 +2581,9 @@ z-index: 98;
   .fnc-nav__control {
     display: none;
 }
+.navtwo-link a {
+  font-size: 27px;
+}
   
   .title {
     margin-top: 4rem;
@@ -2697,5 +2700,15 @@ z-index: 98;
   .testimonial .slide p {
     font-size: 11px;
   }
+  .launch-head {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .launch-time {
+    gap: 5px;
+}
+.count-btn a {
+  margin-bottom: 3em;
+}
 }
 

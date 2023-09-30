@@ -759,3 +759,13 @@ background: #1d1e22 !important;
     transform: none !important;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .navtwo-link a {
+    font-size: 30px !important;
+  }
+  .navtwo-item-wrapper::after {
+    height: 50px;
+    top: 57px;
+}
+}
