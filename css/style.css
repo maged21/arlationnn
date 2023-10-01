@@ -2520,7 +2520,12 @@ z-index: 98;
   .accord-body {
     padding-top: 0 !important;
   }
-
+  .service .sec_btn-ser{
+    margin-bottom: 50px;
+  }
+  .wrap .sec_btn-ser {
+    bottom: -30%;
+  }
 
   .tech {
     width: 50% !important;
@@ -2671,6 +2676,10 @@ z-index: 98;
     width: 180px;
     font-size: 17px;
   }
+  .service .sec_btn-ser{
+    margin-bottom: 20px !important;
+  }
+
 
   .testimonial .slide p {
     font-size: 14px;
