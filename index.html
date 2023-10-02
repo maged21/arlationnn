@@ -75,7 +75,7 @@
             <section id="header">
                 <section class="video-section" >
                     <video autoplay muted id="video">
-                      <source src="images/hero.mp4" type="video/mp4">
+                      <source src="../images/hero.mp4" type="video/mp4">
                     </video>
                     <button id="skipButton">Skip Video...</button>
                 </section>
@@ -1053,60 +1053,65 @@
       const muteButton = document.getElementById("muteButton");
       const toggleMute = document.getElementById("toggleMute");
       let isSoundPlaying = false;
-  
+    
       // Function to play the sound
       function playSound() {
-          if (!isSoundPlaying) {
-              sound.play();
-              isSoundPlaying = true;
-          }
+        if (!isSoundPlaying) {
+          sound.play();
+          isSoundPlaying = true;
+        }
       }
-  
+    
       // Function to pause the sound
       function pauseSound() {
-          if (isSoundPlaying) {
-              sound.pause();
-              isSoundPlaying = false;
-          }
+        if (isSoundPlaying) {
+          sound.pause();
+          isSoundPlaying = false;
+        }
       }
-  
-    // Function to toggle mute/unmute
-    function toggleMuteSound() {
-      sound.muted = !sound.muted;
-      if (sound.muted) {
+    
+      // Function to toggle mute/unmute
+      function toggleMuteSound() {
+        sound.muted = !sound.muted;
+        if (sound.muted) {
           toggleMute.innerHTML = '<i class="fas fa-volume-mute"></i>';
-      } else {
+        } else {
           toggleMute.innerHTML = '<i class="fas fa-volume-up"></i>';
+        }
       }
-  }
-  
-      // Initialize Intersection Observer
-      const options = {
+    
+      // Check if the user is on a mobile device
+      const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+    
+      if (!isMobileDevice) {
+        // Initialize Intersection Observer
+        const options = {
           root: null,
           rootMargin: "0px",
           threshold: 0.5, // Change this threshold as needed
-      };
-  
-      const observer = new IntersectionObserver((entries, observer) => {
+        };
+    
+        const observer = new IntersectionObserver((entries, observer) => {
           entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                  playSound();
-                  muteButton.style.display = "block";
-              } else {
-                  pauseSound();
-                  muteButton.style.display = "none";
-              }
+            if (entry.isIntersecting) {
+              playSound();
+              muteButton.style.display = "block";
+            } else {
+              pauseSound();
+              muteButton.style.display = "none";
+            }
           });
-      }, options);
-  
-      // Start observing the section
-      const countdownSection = document.getElementById("countdown");
-      observer.observe(countdownSection);
-  
-      // Add a click event listener to the mute button
-      toggleMute.addEventListener("click", toggleMuteSound);
+        }, options);
+    
+        // Start observing the section
+        const countdownSection = document.getElementById("countdown");
+        observer.observe(countdownSection);
+    
+        // Add a click event listener to the mute button
+        toggleMute.addEventListener("click", toggleMuteSound);
+      }
     </script>
-
+    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const link = document.getElementById("link");
