@@ -207,37 +207,59 @@ fncSlider(".example-slider", {autoSlidingDelay: 4000});
 
 
 // slider ends
+document.addEventListener("DOMContentLoaded", function () {
+  // Disable scrolling on the page
+  function disableScroll() {
+    document.body.style.overflow = "hidden";
+  }
 
-gsap.to(".clipper-left", 2, {
-  delay: 2,
-  clipPath: "inset(0 0 100% 0)",
-  ease: "power4.inOut",
+  // Enable scrolling on the page
+  function enableScroll() {
+    document.body.style.overflow = "auto";
+  }
+
+  // Function to hide the pre-loader
+  function hidePreLoader() {
+    // Hide the pre-loader using your GSAP animations
+    gsap.to(".clipper-left", 2, {
+      delay: 1.5,
+      clipPath: "inset(0 0 100% 0)",
+      ease: "power4.inOut",
+    });
+
+    gsap.to(".clipper-right", 2, {
+      delay: 1.6,
+      clipPath: "inset(100% 0 0 0)",
+      ease: "power4,inOut",
+    });
+
+    gsap.from(".loader-wrapper", 2, {
+      scale: 0.9,
+      ease: "power1.inOut",
+    });
+
+    gsap.from(".loader", 2.5, {
+      right: "100%",
+      ease: "power1.inOut",
+    });
+
+    gsap.to(".loader-wrapper, .pre-loader", 0.2, {
+      opacity: 0,
+      display: "none",
+      ease: "power3.inOut",
+      delay: 2.1,
+      onComplete: enableScroll, // Re-enable scrolling after hiding pre-loader
+    });
+  }
+
+  // Initially, disable scrolling and show the pre-loader
+  disableScroll();
+
+  // Add an event listener to hide the pre-loader when it's ready
+  setTimeout(hidePreLoader, 500); // Adjust the delay as needed
 });
 
-gsap.to(".clipper-right", 2, {
-  delay: 2,
-  clipPath: "inset(100% 0 0 0)",
-  ease: "power4,inOut",
-});
 
-gsap.from(".loader-wrapper", 2, {
-  scale: 0.9,
-  ease: "power1.inOut",
-});
-
-gsap.from(".loader", 2.5, {
-  right: "100%",
-  ease: "power1.inOut",
-});
-
-gsap.to(".loader-wrapper, .pre-loader", 0.2, {
-  opacity: 0,
-  display: "none",
-  ease: "power3.inOut",
-  delay: 2.1,
-},
-"-=1"
-);
 
 // ---------------- hero section
 TweenMax.from(".navbar-brand", 1,{

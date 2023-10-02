@@ -907,6 +907,9 @@ z-index: 98;
 .example-slider .fnc-nav__control {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /* countdown */
 
@@ -1021,6 +1024,8 @@ z-index: 98;
   color: #000 !important;
   position: relative;
   height: 100vh;
+  display: flex !important;
+  align-items: center !important;
 }
 
 #about-us .sec_btn-ser a{
@@ -1062,6 +1067,8 @@ z-index: 98;
   background:#151515 !important;
   position: relative;
   height: 100vh;
+  display: flex !important;
+  align-items: center !important;
 }
 .about-text h1{
   font-size: 60px;
@@ -1095,10 +1102,11 @@ z-index: 98;
 
 
 .icon-holder .icon{
-  right: 68%;
+  right: 72%;
   top: -35%;
   color: #2fbced;
   opacity: 0.1;
+  font-size: 10rem;
 }
 
 .about-ustwo  h1 {
