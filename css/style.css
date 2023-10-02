@@ -1891,7 +1891,7 @@ z-index: 98;
   overflow: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  
+  -webkit-overflow-scrolling: auto; 
 }
 
 .scroll-area {
