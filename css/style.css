@@ -1793,7 +1793,7 @@ z-index: 98;
 .tech:hover {
   filter: grayscale(0%);
 }
-.footer{
+#footer{
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subtle-prism2.png);
   background-repeat: no-repeat;
   background-position: center;
