@@ -207,59 +207,38 @@ fncSlider(".example-slider", {autoSlidingDelay: 4000});
 
 
 // slider ends
-document.addEventListener("DOMContentLoaded", function () {
-  // Disable scrolling on the page
-  function disableScroll() {
-    document.body.style.overflow = "hidden";
-  }
 
-  // Enable scrolling on the page
-  function enableScroll() {
-    document.body.style.overflow = "auto";
-  }
-
-  // Function to hide the pre-loader
-  function hidePreLoader() {
-    // Hide the pre-loader using your GSAP animations
-    gsap.to(".clipper-left", 2, {
-      delay: 1.5,
-      clipPath: "inset(0 0 100% 0)",
-      ease: "power4.inOut",
-    });
-
-    gsap.to(".clipper-right", 2, {
-      delay: 1.6,
-      clipPath: "inset(100% 0 0 0)",
-      ease: "power4,inOut",
-    });
-
-    gsap.from(".loader-wrapper", 2, {
-      scale: 0.9,
-      ease: "power1.inOut",
-    });
-
-    gsap.from(".loader", 2.5, {
-      right: "100%",
-      ease: "power1.inOut",
-    });
-
-    gsap.to(".loader-wrapper, .pre-loader", 0.2, {
-      opacity: 0,
-      display: "none",
-      ease: "power3.inOut",
-      delay: 2.1,
-      onComplete: enableScroll, // Re-enable scrolling after hiding pre-loader
-    });
-  }
-
-  // Initially, disable scrolling and show the pre-loader
-  disableScroll();
-
-  // Add an event listener to hide the pre-loader when it's ready
-  setTimeout(hidePreLoader, 500); // Adjust the delay as needed
+// intro
+gsap.to(".clipper-left", 2, {
+  delay: 2,
+  clipPath: "inset(0 0 100% 0)",
+  ease: "power4.inOut",
 });
 
+gsap.to(".clipper-right", 2, {
+  delay: 2,
+  clipPath: "inset(100% 0 0 0)",
+  ease: "power4,inOut",
+});
 
+gsap.from(".loader-wrapper", 2, {
+  scale: 0.9,
+  ease: "power1.inOut",
+});
+
+gsap.from(".loader", 2.5, {
+  right: "100%",
+  ease: "power1.inOut",
+});
+
+gsap.to(".loader-wrapper, .pre-loader", 0.2, {
+  opacity: 0,
+  display: "none",
+  ease: "power3.inOut",
+  delay: 2.1,
+},
+"-=1"
+);
 
 // ---------------- hero section
 TweenMax.from(".navbar-brand", 1,{
@@ -341,7 +320,7 @@ tl.from(".nav-footer", {
 let prevScrollPos = 0;
 
 function toggleSecondNavbar() {
-  const scrollPosition = scrollContainer.scrollTop;
+  const scrollPosition = window.scrollY; // Use window.scrollY to get the scroll position
   const secondNavbar = document.querySelector(".navbartwo");
 
   if (scrollPosition === 0) {
@@ -357,11 +336,6 @@ function toggleSecondNavbar() {
 
 // Listen for the scroll event on the window object
 window.addEventListener("scroll", toggleSecondNavbar);
-// Initialize the scrollContainer variable
-const scrollContainer = document.querySelector(".scroll-container");
-
-// Listen for the scroll event on the scroll container
-scrollContainer.addEventListener("scroll", toggleSecondNavbar);
 
 // ---------------- second navbar ends
 
@@ -502,14 +476,21 @@ $(function () {
 
 const span = document.querySelector(".up");
 
-scrollContainer.addEventListener("scroll", function () {
-  this.scrollTop >= 1000
-    ? span.classList.add("show")
-    : span.classList.remove("show");
+// You can select the container directly using document
+const container = document.documentElement; // For the entire document, or you can use another selector
+
+document.addEventListener("scroll", function () {
+  // Use the container variable here instead of scrollContainer
+  if (container.scrollTop >= 1000) {
+    span.classList.add("show");
+  } else {
+    span.classList.remove("show");
+  }
 });
 
 span.addEventListener("click", function () {
-  scrollContainer.scrollTo({
+  // Use the container variable here instead of scrollContainer
+  container.scrollTo({
     top: 0,
     behavior: "smooth",
   });

@@ -35,7 +35,7 @@ body{
     height: 100%;
     width: 100%;
     font-family: 'Ubuntu', sans-serif !important;
-    background: #fff!important;
+    background: #000!important;
     overflow-x: hidden !important;
 }
 
@@ -322,8 +322,8 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0px 1em;
-top: 0;
+padding: 0px 2em;
+top: 7px;
 left: 0;
 opacity: 0;
 transition: opacity 0.3s ease-in-out;
@@ -1137,6 +1137,9 @@ z-index: 98;
 }
 
 /* ----------------------- service */
+#service {
+  background:#fff !important;
+}
 .service{
   height: 100vh;
 }
@@ -1809,11 +1812,11 @@ z-index: 98;
   filter: grayscale(0%);
 }
 #footer{
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subtle-prism2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/subtle-prism2.png) !important;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
   color: #f4fffe;
   padding: 0.5rem;
 }
@@ -1906,7 +1909,6 @@ z-index: 98;
   overflow: auto;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: auto; 
 }
 
 .scroll-area {
@@ -1983,7 +1985,7 @@ z-index: 98;
     font-size: 50px;
   }
   .icon-holder .icon{
-    right: 62%;
+    right: 67%;
 
   }
   .hero-section p {
@@ -2142,6 +2144,12 @@ z-index: 98;
   .footer-box p {
     margin-bottom: 0.5px !important;
   }
+  
+.about-ustwo{
+  background:#151515 !important;
+  position: relative;
+  height: 110vh;
+}
 }
 
 @media screen and (max-width: 1366px) {
@@ -2234,7 +2242,9 @@ z-index: 98;
 .sec-title {
   margin-bottom: 5rem;
 }
-
+#header {
+  height: 34vh;
+}
 .site-logo {
   margin-left: -50px !important;
 }
@@ -2395,10 +2405,25 @@ z-index: 98;
     .scroll-area {
     scroll-snap-type: none;
   }
+    #header {
+      height: 24vh;
+    }
+
+  .clipper-left, .clipper-right {
+    display: none;
+  }
+  .pre-loader {
+    display: none;
+  }
   .icon-holder .icon {
     display: none !important;
   }
 
+  .fnc-slide__mask img {
+    width: 58%;
+    height: 50%;
+    object-fit: cover;
+}
   .up {
     font-size: 15px;
     padding: 13px;
@@ -2414,10 +2439,11 @@ z-index: 98;
   }
   .navbartwo {
     padding: 0em 0.5em !important;
+    background: transparent !important;
   }
-  .navtwo-link {
-    margin-bottom: -20px;
-  }
+  .navtwo-socials {
+    margin-top: 6em;
+}
   .navtwo-link a{
     font-size: 40px;
   }
@@ -2425,7 +2451,7 @@ z-index: 98;
     flex-direction: column;
   }
   .navtwo-item-wrapper::after{
-    height: 50px;
+    top: 67px;
   }
   .hero-section p{
     margin-bottom: -10px !important;
@@ -2462,15 +2488,12 @@ z-index: 98;
   font-weight:500;
   color: #D19678;
 }
-.fnc-slide__action-btn{
-  margin-left: 0;
-  margin-top: 150px;
-}
+
 .fnc-slide__content {
   z-index: 2;
   position: absolute;
   left: 50%;
-  top: 60%;
+  top: 46%;
   transform: translate(-25%, -0%);
   /* text-align: center; */
 }
@@ -2483,6 +2506,40 @@ z-index: 98;
   padding-left: 0px;
 }
 
+.fnc-slide__heading-line {
+  font-size: 16px;
+  margin-left: 90px !important;
+  letter-spacing: 0px;
+}
+
+.fnc-slide__mask-inner {
+  height: 0vh;
+  margin-left: 6vw;
+  margin-top: -40vh;
+}
+.fnc-slide__mask .arabic-mg {
+  height: 48%;
+  object-fit: fill;
+}
+
+.fnc-slide__mask {
+  width: 30vh;
+  height: 33vh;
+  top: 25%;
+  right: 38%;
+}
+.fnc-nav{
+  right: -60px;
+}
+.fnc-nav__control {
+  display: none;
+}
+.fnc-slide__action-btn span {
+  left: 120% !important;
+  top: 15px;
+  font-size: 13px;
+  width: 60%;
+}
 #about-us{
   padding-bottom: 30px !important;
 }
@@ -2584,32 +2641,15 @@ z-index: 98;
     left: 0;
     right: 0;
   }
-
-    .fnc-slide__heading-line {
-    font-size: 27px;
-    margin-left: -60px !important;
-    letter-spacing: 5px;
+  #muteButton {
+    display: none !important;
   }
-
-  .fnc-slide__mask-inner {
-    height: 24vh;
-    margin-left: 6vw;
-    margin-top: -40vh;
+  #assassinSound {
+    display: none !important;
   }
-  
-  .fnc-slide__mask {
-    width: 30vh;
-    height: 33vh;
-    top: 25%;
-    right: 38%;
-}
-  .fnc-nav{
-    right: -60px;
+  #cookie-consent {
+    display: none !important;
   }
-  .fnc-nav__control {
-    display: none;
-  }
-  
 }
 
 @media screen and (max-width: 400px) {
@@ -2621,6 +2661,21 @@ z-index: 98;
     letter-spacing: 0.2em !important;
     margin-top: 30px;
   }
+  #header {
+    height: 25vh;
+  } 
+.fnc-slide__heading {
+  width: 210px;
+}
+.fnc-slide__heading-line{
+  font-size: 12px;
+}
+.fnc-slide__action-btn span {
+  left: 120% !important;
+  top: -15px;
+  font-size: 10px;
+  width: 60%;
+}
 
   .fnc-nav__control {
     display: none;
@@ -2635,9 +2690,7 @@ z-index: 98;
   .about-text h1 {
     font-size: 30px;
   }
-  #about-us {
-    padding: 66px 0;
-  }
+
 
   .about-ustwo{
     height: 140vh !important;
@@ -2710,14 +2763,7 @@ z-index: 98;
     margin-left: 0;
     margin-top: 70px;
   }
-  .fnc-slide__content {
-    z-index: 2;
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-25%, -0%);
-    /* text-align: center; */
-  }
+
   .service .sec_btn-ser{
     margin-bottom: 17%;
   }

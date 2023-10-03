@@ -660,6 +660,9 @@ background: #1d1e22 !important;
   .site-logo {
     margin-left: -50px !important;
   }
+  #header {
+    height: 40vh;
+  }
   .navbartwo {
     position:fixed !important;
     padding: 2em !important;
