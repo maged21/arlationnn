@@ -1049,7 +1049,6 @@
     <!-- script -->
     <script src="js/script.js"></script>
     
-
     <script>
       const sound = document.getElementById("assassinSound");
       const muteButton = document.getElementById("muteButton");
@@ -1058,7 +1057,7 @@
     
       // Function to play the sound
       function playSound() {
-        if (!isSoundPlaying) {
+        if (!isSoundPlaying && window.innerWidth >= 850) {
           sound.play();
           isSoundPlaying = true;
         }
@@ -1082,37 +1081,33 @@
         }
       }
     
-      // Check if the user is on a mobile device
-      const isMobileDevice = /Mobi|Android/i.test(navigator.userAgent);
+      // Initialize Intersection Observer
+      const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5, // Change this threshold as needed
+      };
     
-      if (!isMobileDevice) {
-        // Initialize Intersection Observer
-        const options = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0.0, // Change this threshold as needed
-        };
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && window.innerWidth >= 850) {
+            playSound();
+            muteButton.style.display = "block";
+          } else {
+            pauseSound();
+            muteButton.style.display = "none";
+          }
+        });
+      }, options);
     
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              playSound();
-              muteButton.style.display = "block";
-            } else {
-              pauseSound();
-              muteButton.style.display = "none";
-            }
-          });
-        }, options);
+      // Start observing the section
+      const countdownSection = document.getElementById("countdown");
+      observer.observe(countdownSection);
     
-        // Start observing the section
-        const countdownSection = document.getElementById("countdown");
-        observer.observe(countdownSection);
-    
-        // Add a click event listener to the mute button
-        toggleMute.addEventListener("click", toggleMuteSound);
-      }
+      // Add a click event listener to the mute button
+      toggleMute.addEventListener("click", toggleMuteSound);
     </script>
+    
     
     <script>
       document.addEventListener("DOMContentLoaded", function () {

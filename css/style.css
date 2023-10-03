@@ -2239,15 +2239,16 @@ z-index: 98;
 .navbar {
   display: none !important;
 }
+.navbartwo {
+  background: transparent !important;
+}
 .sec-title {
   margin-bottom: 5rem;
 }
 #header {
   height: 34vh;
 }
-.site-logo {
-  margin-left: -50px !important;
-}
+
 .navbartwo {
   position:fixed !important;
   opacity: 1 !important;
@@ -2526,7 +2527,7 @@ z-index: 98;
   width: 30vh;
   height: 33vh;
   top: 25%;
-  right: 38%;
+  right: 42%;
 }
 .fnc-nav{
   right: -60px;
@@ -2546,7 +2547,6 @@ z-index: 98;
 
 .about-ustwo{
   height: 115vh !important;
-  padding-top: 3rem !important;
 }
     
   .hero-section h1 {
