@@ -898,7 +898,7 @@ z-index: 98;
 
 .example-slider .fnc-slide-7 .fnc-slide__inner,
 .example-slider .fnc-slide-7 .fnc-slide__mask-inner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Pink\ Abstract\ Tech\ Gaming\ Neon\ Desktop\ Wallpaper.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg5.png);
   background-size: cover;
 }
 
@@ -952,14 +952,20 @@ z-index: 98;
   opacity: 0.2;
 }
 
-.launch-time{
+.launch-text{
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 150px 0px;
+  color: #fff;
+}
+.launch-text h2{
+  font-size: 60px;
+}
+.launch-text h2 span{
+  color: #D19678;
 }
 .launch-head{
   font-size: 80px;
@@ -967,15 +973,6 @@ z-index: 98;
   color: #f4fffe;
 }
 .launch-span{
-  color: #D19678;
-}
-.launch-time div p {
-  font-size: 90px !important;
-  color: #f4fffe;
-}
-.launch-time div span {
-  font-size: 40px;
-  font-weight:500;
   color: #D19678;
 }
 
@@ -1669,6 +1666,10 @@ z-index: 98;
   height: 100vh;
 }
 
+.portfolio .sec-title {
+  margin-bottom: 150px !important;
+}
+
 .portfolio > .row > .box {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1696,8 +1697,9 @@ z-index: 98;
   display: block;
   text-align: center;
   height: 10vh;
-  line-height: 1.6;
+  line-height: 1.2;
 }
+
 
 .box:hover { flex: 1 1 40%; }
 .box:hover > img {
@@ -1928,7 +1930,7 @@ z-index: 98;
     margin-left: 0;
   }
   .wrap ul.submenu{
-    left: 30%;
+    left: 27%;
     top: -40%;
   }
   .wrap ul.submenu li {
@@ -1954,7 +1956,7 @@ z-index: 98;
     width: 362px;
   }
   .accordion-img {
-    right: 0;
+    right: -24px;
     height: 100%;
     width: 40% !important;
     top: 0px;
@@ -1962,6 +1964,9 @@ z-index: 98;
   .wrap .sec_btn-ser {
     left: 50px;
     bottom: -50%;
+  }
+  .portfolio {
+    height: 120vh;
   }
   .clients {
     margin: 1rem 0;
@@ -1986,7 +1991,9 @@ z-index: 98;
   }
   .icon-holder .icon{
     right: 67%;
-
+  }
+  .launch-text {
+    margin: 80px;
   }
   .hero-section p {
     font-size: 20px;
